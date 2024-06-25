@@ -1,5 +1,5 @@
 {% set name = "hydromt" %}
-{% set version = "0.10.0" %}
+{% set version = "1.0.0a0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hydromt-{{ version }}.tar.gz
-  sha256: 1938863761a8a1f99cf6fb26932ec6f56fa2fc08f6b00755e6125e13c6535899
+  sha256: 317a0d74ab68420b1e8c6f8457fdbc01889e3ab9093374cd4896d4974eacaf86
 
 build:
   number: 0
@@ -23,38 +23,41 @@ requirements:
     - flit
     - python >=3.9, <3.12
   run:
-    - affine
-    - bottleneck
-    - click
-    - dask
-    - fsspec
-    - geopandas >=0.10
-    - importlib_metadata
-    - mercantile
-    - netcdf4
-    - numba
-    - numpy >=1.20, <2
-    - packaging
-    - pandas
-    - pooch
-    - pydantic ~=2.4
-    - pyflwdir >=0.5.4
-    - pyogrio >=0.6
-    - pyproj
-    - pystac
-    - python >=3.9, <3.12
-    - pyyaml
-    - rasterio
-    - requests
-    - rioxarray
-    - scipy
-    - shapely >=2.0.0
-    - tomli
-    - tomli-w
-    - universal_pathlib >=0.2
-    - xarray ==2024.3.0
-    - xmltodict
-    - zarr
+    - affine                 
+    - bottleneck             
+    - click                  
+    - dask                   
+    - fsspec                 
+    - geopandas >=0.10        
+    - importlib_metadata    
+    - mercantile            
+    - netcdf4              
+    - numba                 
+    - numpy >=1.23, <2       
+    - packaging             
+    - pandas              
+    - pooch                
+    - pyarrow <16            
+    - pydantic ~=2.4         
+    - pydantic-settings ~=2.2
+    - pyflwdir >=0.5.4       
+    - pyogrio >=0.6          
+    - pyproj                
+    - pyyaml   
+    - python >=3.9       
+    - pystac      
+    - rasterio              
+    - requests               
+    - rioxarray             
+    - scipy                 
+    - shapely >=2.0.0         
+    - tomli                
+    - tomli-w              
+    - universal_pathlib >=0.2 
+    - xarray ==2024.3.0      
+    - xmltodict             
+    - xugrid >=0.9.0         
+    - zarr                  
 test:
   imports:
     - hydromt

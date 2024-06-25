@@ -1,7 +1,7 @@
 About hydromt-feedstock
 =======================
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hydromt-feedstock/blob/main/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hydromt-feedstock/blob/v1-alpha/LICENSE.txt)
 
 Home: https://pypi.org/project/hydromt/
 
@@ -17,8 +17,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12476&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hydromt-feedstock?branchName=main">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12476&branchName=v1-alpha">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hydromt-feedstock?branchName=v1-alpha">
       </a>
     </td>
   </tr>
