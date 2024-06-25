@@ -1,5 +1,5 @@
 {% set name = "hydromt" %}
-{% set version = "1.0.0.dev" %}
+{% set version = "1.0.0-alpha" %}
 
 
 package:
@@ -11,7 +11,7 @@ source:
   sha256: 1938863761a8a1f99cf6fb26932ec6f56fa2fc08f6b00755e6125e13c6535899
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - hydromt = hydromt.cli.main:main
