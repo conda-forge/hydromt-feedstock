@@ -1,5 +1,5 @@
 {% set name = "hydromt" %}
-{% set version = "0.10.0" %}
+{% set version = "1.0.0.dev" %}
 
 
 package:
@@ -11,7 +11,7 @@ source:
   sha256: 1938863761a8a1f99cf6fb26932ec6f56fa2fc08f6b00755e6125e13c6535899
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - hydromt = hydromt.cli.main:main
@@ -23,38 +23,40 @@ requirements:
     - flit
     - python >=3.9, <3.12
   run:
-    - affine
-    - bottleneck
-    - click
-    - dask
-    - fsspec
-    - geopandas >=0.10
-    - importlib_metadata
-    - mercantile
-    - netcdf4
-    - numba
-    - numpy >=1.20, <2
-    - packaging
-    - pandas
-    - pooch
-    - pydantic ~=2.4
-    - pyflwdir >=0.5.4
-    - pyogrio >=0.6
-    - pyproj
-    - pystac
-    - python >=3.9, <3.12
-    - pyyaml
-    - rasterio
-    - requests
-    - rioxarray
-    - scipy
-    - shapely >=2.0.0
-    - tomli
-    - tomli-w
-    - universal_pathlib >=0.2
-    - xarray ==2024.3.0
-    - xmltodict
-    - zarr
+    - affine                 # Spatial rasterers affine transformations (bbox pixel coalision)
+    - bottleneck             # Spearmen rank computation
+    - click                  # CLI configuration
+    - dask                   # lazy computing
+    - fsspec                 # general file systems utilities
+    - geopandas>=0.10        # pandas but geo, wraps fiona and shapely
+    - importlib_metadata     # entrypoints backport
+    - mercantile             # tile handling
+    - netcdf4                # netcfd IO
+    - numba                  # speed up computations (used in e.g. stats)
+    - numpy>=1.23, <2        # pin necessary to ensure compatability with C headers
+    - packaging              # compare versions of hydromt
+    - pandas                 # Dataframes
+    - pooch                  # data fetching
+    - pyarrow<16             # prevents incompat with pandas.
+    - pydantic~=2.4          # Validation
+    - pydantic-settings~=2.2 # Settings Management
+    - pyflwdir>=0.5.4        # Hight models and derivatives
+    - pyogrio>=0.6           # io for geopandas dataframes
+    - pyproj                 # projections for Coordinate reference systems
+    - pystac                 # STAC integration
+    - pyyaml                 # yaml interface
+    - rasterio               # raster wrapper around gdal
+    - requests               # donwload stuff
+    - rioxarray              # wraps rasterio and xarray. Almost superceded by hydromt/raster.py
+    - scipy                  # scientific utilities
+    - shapely>=2.0.0         # geometry transforms
+    - tomli                  # parsing toml files
+    - tomli-w                # writing toml files
+    - universal_pathlib>=0.2 # provides path compatability between different filesystems
+    - xarray==2024.3.0       # ndim data arrays
+    - xmltodict              # xml parser also used to read VRT
+    - xugrid>=0.9.0          # xarray wrapper for mesh processing
+    - zarr                   # zarr
 test:
   imports:
     - hydromt
