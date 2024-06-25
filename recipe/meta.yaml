@@ -44,7 +44,8 @@ requirements:
     - pyogrio >=0.6          
     - pyproj                
     - pyyaml   
-    - python >=3.9             
+    - python >=3.9       
+    - pystac      
     - rasterio              
     - requests               
     - rioxarray             
