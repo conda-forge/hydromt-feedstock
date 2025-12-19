@@ -1,5 +1,6 @@
 {% set name = "hydromt" %}
-{% set version = "1.2.0" %}
+{% set version = "1.3.0" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hydromt-{{ version }}.tar.gz
-  sha256: f9cb56e54c17fbf52c01fb08011e5a887956d48e6e6595aff735fc1e3a142e6a
+  sha256: fca040f99caeebcba1a9b232c1cc662ffa48d62e6c8526a0946cdc82e93ddb43
 
 build:
   number: 0
@@ -47,7 +48,7 @@ requirements:
     - pyogrio >=0.6
     - pyproj
     - pystac
-    - python >={{ python_min }},<3.14
+    - python >={{ python_min }}
     - pyyaml
     - rasterio
     - requests
@@ -60,7 +61,7 @@ requirements:
     - xarray
     - xmltodict
     - xugrid >=0.9.0
-    - zarr >=2,<3
+    - zarr >=3.1,<4
 test:
   imports:
     - hydromt
@@ -87,5 +88,4 @@ extra:
     - savente93
     - DirkEilander
     - hboisgon
-    - dalmijn
     - LuukBlom
