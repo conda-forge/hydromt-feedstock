@@ -20,7 +20,7 @@ requirements:
   host:
     - pip
     - flit
-    - python {{ python_min }}
+    - python >=3.11,<3.14
   run:
     # since noarch: python doesn't allow us to do fsspec[http]
     # we have to manually list the extra dependencies the http
@@ -47,7 +47,7 @@ requirements:
     - pyogrio >=0.6
     - pyproj
     - pystac
-    - python >={{ python_min }},<3.14
+    - python >=3.11,<3.14
     - pyyaml
     - rasterio
     - requests
@@ -70,7 +70,7 @@ test:
     - hydromt --help
   requires:
     - pip
-    - python {{ python_min }}
+    - python >=3.11,<3.14
 
 about:
   home: https://pypi.org/project/hydromt/
@@ -87,4 +87,4 @@ extra:
     - savente93
     - DirkEilander
     - hboisgon
-    - dalmijn
+    - LuukBlom
