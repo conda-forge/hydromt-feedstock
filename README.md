@@ -149,6 +149,7 @@ Feedstock Maintainers
 
 * [@DirkEilander](https://github.com/DirkEilander/)
 * [@FMSST](https://github.com/FMSST/)
+* [@LuukBlom](https://github.com/LuukBlom/)
 * [@dalmijn](https://github.com/dalmijn/)
 * [@hboisgon](https://github.com/hboisgon/)
 * [@savente93](https://github.com/savente93/)
