@@ -17,10 +17,11 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12476&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hydromt-feedstock?branchName=main">
+      <a href="https://github.com/conda-forge/hydromt-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/hydromt-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
@@ -150,7 +151,7 @@ Feedstock Maintainers
 * [@DirkEilander](https://github.com/DirkEilander/)
 * [@FMSST](https://github.com/FMSST/)
 * [@LuukBlom](https://github.com/LuukBlom/)
+* [@aslowwriter](https://github.com/aslowwriter/)
 * [@dalmijn](https://github.com/dalmijn/)
 * [@hboisgon](https://github.com/hboisgon/)
-* [@savente93](https://github.com/savente93/)
 
