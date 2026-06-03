@@ -1,5 +1,5 @@
 {% set name = "hydromt" %}
-{% set version = "1.3.1" %}
+{% set version = "1.4.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hydromt-{{ version }}.tar.gz
-  sha256: 82d185ad1dc4f9819e0591f71819dde4b5ab10c11c1632bf0eb5d1d675b0872e
+  sha256: 64c09860b14dba80dda440f50ba7755b556e64bf34ff451e3dcdc3018272c9dc
 
 build:
   number: 0
@@ -55,6 +55,7 @@ requirements:
     - rioxarray
     - scipy
     - shapely >=2.1.0
+    - tenacity
     - tomli
     - tomli-w
     - universal_pathlib >=0.2
