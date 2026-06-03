@@ -55,6 +55,7 @@ requirements:
     - rioxarray
     - scipy
     - shapely >=2.1.0
+    - tenacity
     - tomli
     - tomli-w
     - universal_pathlib >=0.2
