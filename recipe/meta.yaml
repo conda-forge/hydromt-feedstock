@@ -53,6 +53,7 @@ requirements:
     - rasterio
     - requests
     - rioxarray
+    - rio-vrt
     - scipy
     - shapely >=2.1.0
     - tenacity
